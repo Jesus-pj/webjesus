@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <script>
+            var num1,paciente,total,descuento;
+            num1 = prompt("Ingrese el monto a pagar por el paciente");
+            num1 = parseInt(num1);
+            if(num1>0)
+            {
+                paciente = prompt("Digite 1,2,3,4  dependiendo los ingresos del paciente","");
+                switch(paciente)
+                {
+                    case "1": total="35%";
+                        descuento = num1-(num1*0.35);
+                        document.write("<center> <h1>La opcion del paciente es:"+paciente+ " el porcentage de descuento a aplicar es de: "+total+"y el total a pagar con descuento incluido es : $"+descuento+ "</h1></center><br>");
+                        break;
+                    case "2": total="22%";
+                        descuento = num1-(num1*0.22);
+                        document.write("<center> <h1>La opcion del paciente es:"+paciente+ " el porcentage de descuento a aplicar es de: "+total+"y el total a pagar con descuento incluido es : $"+descuento+ "</h1></center><br>");
+                        break;
+                    case "3": total="15%";
+                        descuento = num1-(num1*0.15);
+                        document.write("<center> <h1>La opcion del paciente es:"+paciente+ " el porcentage de descuento a aplicar es de: "+total+"y el total a pagar con descuento incluido es : $"+descuento+ "</h1></center><br>");
+                        break;
+                    case "4"  : total="5%";
+                        descuento = num1-(num1*0.05);
+                        document.write("<center> <h1>La opcion del paciente es:"+paciente+ " el porcentage de descuento a aplicar es de: "+total+"y el total a pagar con descuento incluido es : $"+descuento+ "</h1></center><br>");
+                        break;
+                        //default: document.write("La opcion selecionada no exite , intentelo de nuevo");
+                }
+            }
+            else
+            {
+                document.write("Lacantidad en el monto incial no es valida");
+            }
+        </script>
+    </head>
+    <body bgcolor="#19FAA1">
+        <center><img src="C:\Users\OMAR\Pictures\ejercicios\10.jpg"></center>
+    </body>
+</html>

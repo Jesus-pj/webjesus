@@ -1,0 +1,37 @@
+<html>
+<head>
+
+<script>
+    var num1=0, num2=0;
+    num1 = prompt("El usuario a ingresado esta cantidad de dinero ");
+    num2 = prompt("La taza de interes es");
+    alert ("El usuario a ingresado esta cantidad de dinero: " + num1);
+    alert ("La taza de interes es:" + num2);
+    var taza = (parseFloat(num1) * num2 )/100;
+    alert ("la taza de interes sera de :" + taza);
+    var interes = ( num1 - taza);
+    alert ("monto del dinero que obtendrá al finalizar el mes: " + interes);
+    var meses6 = (num2 * 6);
+    alert ("La taza de interes por 6 meses sera de :" + meses6);
+    var m = (num1 * meses6 / 100);
+    alert("El monto a pagar  por seis meses sera de : " + m );
+    var mew = (num1 - m);
+    alert ("Monto del dinero que ontendra a los 6 meses:" + mew);
+    var meses12 = (num2 * 12);
+    alert ("La taza de interes por un año sera de :" + meses12);
+    var m12 = (num1 * meses12 / 100);
+    alert("El monto a pagar  por un año  sera de : " + m12 );
+    var mi = (num1 - m12);
+    alert("Monto del dinero que obtendra al año sera de:" + mi);
+
+    document.write("<center> <h1> EL MONTO DE DINERP QUE OBTENDRA AL FIN DE MES ES DE :" + interes + "</h1></center><br>");
+    document.write("<center> <h1> EL MONTO DE DINERO QUE OBTENDRA A LOS 6 MESES ES DE:" + mew + "</h1></center><br>");
+    document.write("<center> <h1> EL MONTO DE DINERO QUE OBTENDRA AL AÑO ES DE:" + mi + "</h1></center><br>");
+</script>
+</head>
+<body bgcolor="#0A8D40">
+    <center><img src="C:\Users\OMAR\Pictures\ejercicios\2.jpg"></center>
+
+</body>
+
+</html>

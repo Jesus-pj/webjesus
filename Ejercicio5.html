@@ -1,0 +1,30 @@
+<html>
+<head>
+    <script>
+        var num1=0,num2=0, num3=0;
+        num1 = prompt("Introdusca el radio ");
+        num2 = prompt("Introdusca la generatriz ");
+        num3 = prompt("Introdusca la altrura ");
+        alert("El radio es:" + num1 );
+        alert("La generatriz es:" + num2 );
+        alert("La altura es:" + num3 );
+        var rad = (3.1416 * Math.pow(num1,2));
+        alert("El area de la base es:" + rad);
+        var gen = (3.1416 * num1 * num2);
+        alert ("El area lateral  es:" + gen);
+        var ff = (rad+gen);
+        alert("El area total es: " + ff);
+        var alt = (1/3 * rad * num3);
+        alert("La altura es: " + alt);
+
+        document.write("<center> <h1> El area de la base es :" + rad + "</h1></center><br>");
+        document.write("<center> <h1> El area lateral es :" + gen + "</h1></center><br>");
+        document.write("<center> <h1> El area total es :" + ff + "</h1></center><br>");
+        document.write("<center> <h1> Su volumen  es :" + alt + "</h1></center><br>");
+
+    </script>
+</head>
+<body bgcolor="#545E5A">
+    <center><img src="C:\Users\OMAR\Pictures\ejercicios\5.jpg"></center>
+</body>
+</html>

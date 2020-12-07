@@ -1,0 +1,25 @@
+<html>
+<head>
+    <script>
+        var num1=0;
+        num1 = prompt("Ingrese la cantidad de dolares  que desee cambiar ");
+        alert("El dinero a cambiar es de : "+num1);
+        var dolares = (num1 * 11.96);
+        alert ("el dinero a cambiar de dolares a pesos es de :" + dolares);
+        var comision = (num1 * 3 / 100);
+        alert ("La comision en dolares sera de  : " + comision);
+        var mie = (comision * 11.96);
+        alert ("La comision en pesos es de :" + mie);
+        var com = (dolares - mie);
+        alert("En total ya con la comision de dolares a pesos sera de :" + com);
+
+        document.write("<center> <h1> EL DINERO A CAMBIAR DE DOLARES A PESOS ES DE :" + dolares + "</h1></center><br>");
+        document.write("<center> <h1>EL MONTO TOTAL YA CON LA COMICION EN DOLARES , CAMBIADO A PESOS ES DE :" + com + "</h1></center><br>");
+    </script>
+</head>
+
+<body bgcolor="#C49894">
+    <center><img src="C:\Users\OMAR\Pictures\ejercicios\1.jpg"></center>
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <script>
+           var m ,clave,tiempo,z;
+           m = prompt ("Cuantos minutos duro en la llamada");
+           m= parseInt(m);
+           if(m>0){
+               clave = prompt("Digite la clave de destino a la que llamo");
+               clave = parseInt(clave);
+               switch (clave)
+               {
+                   case 12 : tiempo = (3*2)+((m=3)*1.5);
+                    z='<center><h1>America del norte</center></h1>';
+                    break;
+                    case 15 : tiempo = (3*2.2)+((m=3)*1.8);
+                    z='<center><h1>America central</center></h1>';
+                    break;
+                    case 18 : tiempo = (3*4.5)+((m=3)*3.5);
+                    z='<center><h1>America del sur</h1></center>';
+                    break;
+                    case 19 : tiempo = (3*3.5)+((m=3)*2.7);
+                    z='<center><h1>Europa</center></h1>';
+                    break;
+                    case 23 : tiempo = (3*6)+((m=3)*4.6);
+                    z='<center><h1>Asia</center></h1>';
+                    break;
+                    case 25 : tiempo = (3*6)+((m=3)*4.6);
+                    z='<center><h1>Africa</center></h1>';
+                    break;
+                    case 29 : tiempo = (3*5)+((m=3)*3.9);
+                    z='<center><h1>Oceania</center></h1>';
+                    break;
+                    
+                    
+               }
+               
+               document.write("<center> <h1> Usted llamo a la zona de :</center>" + z + "</h1></center><br>");
+               document.write("<br>");
+               document.write("<center> <h1>El costo de su llamada es $:" + tiempo + "</h1></center><br>")
+           }
+           else
+           {
+               document.write("La cantidad de minutos es un numero invalido");
+           }
+        </script>
+    </head>
+    <body bgcolor="#2CC185">
+        <center><img src="C:\Users\OMAR\Pictures\ejercicios\9.jpg"></center>
+
+    </body>
+</html>
